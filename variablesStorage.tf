@@ -32,6 +32,6 @@ variable "fsName" {
 
 variable "fsQuota" {
   type        = string
-  default     = 50
+  default     = 200
   description = "The maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5 TB (5120 GB)."
 }
