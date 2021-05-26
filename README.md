@@ -1,3 +1,5 @@
+[![Terraform](https://github.com/Chambras/SimpleICDemo/actions/workflows/terraform.yml/badge.svg)](https://github.com/Chambras/SimpleICDemo/actions/workflows/terraform.yml)
+
 # Simple Demo Environment
 
 Just a simple demo where I show case integration with [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), and [Terraform Cloud](https://www.terraform.io/docs/cloud/index.html)
@@ -52,7 +54,7 @@ This terraform script has been tested using the following versions:
 
 ## VM Authentication
 
-Linux uses key based authentication and it assumes you already have a key and you can configure the path using the _devRHPublicKey_ variable in _`variablesDevRHVM.tf`_ You can create one using this command:
+Linux uses key based authentication and it assumes you already have a key and you can configure the path using the _devRHsshKeyPath_ variable in _`variablesDevRHVM.tf`_ You can create one using this command:
 
 ```ssh
 ssh-keygen -t rsa -b 4096 -m PEM -C vm@mydomain.com -f ~/.ssh/vm_ssh
@@ -61,7 +63,7 @@ ssh-keygen -t rsa -b 4096 -m PEM -C vm@mydomain.com -f ~/.ssh/vm_ssh
 and set it using this approach:
 
 ```ssh
-export TF_VAR_devRHPublicKey=`cat ~/.ssh/vm_ssh.pub`
+export TF_VAR_devRHsshKeyPath=`~/.ssh/vm_ssh.pub`
 ```
 
 Windows authentication uses user name and password. It is not recommended setting these values in terraform scripts. You can set them as Environment variables. More information about this approach can be found [here](https://www.terraform.io/docs/configuration/variables.html#environment-variables).
