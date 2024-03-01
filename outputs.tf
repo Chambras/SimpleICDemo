@@ -8,11 +8,11 @@ output "vNet" {
 }
 
 output "mainSubnet" {
-  value = azurerm_subnet.main.address_prefix
+  value = azurerm_subnet.main.address_prefixes
 }
 
 output "appSubnet" {
-  value = azurerm_subnet.app.address_prefix
+  value = azurerm_subnet.app.address_prefixes
 }
 
 # Windows VM

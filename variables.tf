@@ -23,6 +23,6 @@ variable "tags" {
     "Project"     = "Demo IC"
     "BillingCode" = "Internal"
     "Customer"    = "Demo"
-    "POC"         = "Marcelo Zambrana V."
+    "POC"         = "Marcelo Zambrana"
   }
 }

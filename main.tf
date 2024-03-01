@@ -1,14 +1,18 @@
 terraform {
-  backend "remote" {
+  cloud {
     organization = "zambrana"
 
     workspaces {
       name = "BasicAzDemoEnv"
     }
   }
-  required_version = "= 0.15.4"
+  required_version = "= 1.7.4"
   required_providers {
-    azurerm = "= 2.60.0"
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "= 3.94.0"
+    }
+
   }
 }
 

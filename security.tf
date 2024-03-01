@@ -8,7 +8,7 @@ resource "azurerm_network_security_group" "rdpNSG" {
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = "TCP"
+    protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "3389"
     source_address_prefixes    = var.sourceIPs
@@ -28,7 +28,7 @@ resource "azurerm_network_security_group" "sshNSG" {
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = "TCP"
+    protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "22"
     source_address_prefixes    = var.sourceIPs
