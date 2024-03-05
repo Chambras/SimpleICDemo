@@ -1,4 +1,4 @@
-resource "azurerm_public_ip" "winPublicIP" {
+/*resource "azurerm_public_ip" "winPublicIP" {
   name                = "${var.suffix}${var.winVMName}"
   location            = azurerm_resource_group.genericRG.location
   resource_group_name = azurerm_resource_group.genericRG.name
@@ -55,3 +55,4 @@ resource "azurerm_windows_virtual_machine" "winVM" {
 
   tags = var.tags
 }
+*/
