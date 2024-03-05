@@ -14,7 +14,7 @@ output "mainSubnet" {
 output "appSubnet" {
   value = azurerm_subnet.app.address_prefixes
 }
-
+/*
 # Windows VM
 output "windowsPublicIP" {
   value = azurerm_public_ip.winPublicIP.ip_address
@@ -44,3 +44,4 @@ output "sshAccess" {
   SSHCONFIG
 }
 
+*/
