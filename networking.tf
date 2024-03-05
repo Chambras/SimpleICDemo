@@ -45,5 +45,10 @@ resource "azurerm_virtual_network" "genericVNet2" {
     address_prefix = "10.70.0.16/28"
   }
 
+  subnet {
+    name           = "subnet3"
+    address_prefix = "10.70.0.32/28"
+  }
+
   tags = var.tags
 }
