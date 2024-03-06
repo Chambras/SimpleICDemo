@@ -4,19 +4,19 @@ variable "devRHUserName" {
   description = "Username to be added to the VM."
 }
 
-variable "devRHsshKeyPath" {
+/*variable "devRHsshKeyPath" {
   type        = string
   default     = "~/.ssh/vm_ssh.pub"
   description = "SSH Key path to use when creating the VM."
   sensitive   = true
-}
+}*/
 
-/*variable "devRHPublicKey" {
+variable "devRHPublicKey" {
   type        = string
   default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRSvh/mi3dOsMRJA0wHB77x+LbFYzTFXc8b2LYeSAMqa06dYC8p9YpmM36dlZ353x8/cDsUEMoiCRUmWuiTEbUHZXvKaBdZiNqdPEed7+05KNWn8WsbKS7PSgAPOIvhS2Cq9WA0hHsxm+GA6bzT4AYMkdSbg4E6Xsisn8f9lT+vJRNmfX+pO4ziIqmX+QM1SmJR5uyiZcSKijIba5qfG1aT6Hxxl7IHjQowtFIevH65krHS0USHqxKwe3Qi5fY+LZC29RW8M6b6UpPICcPdzEtWdrJ2ZdKKtXIK+rL0pZFjqBO1WISweuHnsN58axNUQmSqZkAqjRWBAalpewnWzcTTOjjHUYyiVy2R9QgU+oULunVYZ31/B9uIcmpPyno0D9jMnILK14mUXAfmTPBiiSC25Hsd5jy+x02tj1CNfvddAqrwzbtgsa/nR3mKvXozRGsHf5Y2LG+n3OLITEdAjY0bjAPfvATbwmk9cXx4HDOeGe2EOXTr0ZGU5NTHYnWydgMtNqCeL+10MYYT2NbyZTQ4cu0F9xLdj1sIqjQIWubTocsprec6Zb7PZCTjhwXTDxJcTMAOs+qi4/T4zXlzDvrLAjBTmE91yUPPrt7B0ZVvI+X/G42eahprGO5G0vD1fRfg9KgucZgBZ3WDvuZWHveZVYdo4kTLoj1L72DfiE6TQ== NOTAREALKEY"
   description = "SSH key to use when creating the VM."
   sensitive   = true
-}*/
+}
 
 variable "devRHPublicIPName" {
   type        = string
