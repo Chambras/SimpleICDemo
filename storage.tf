@@ -1,4 +1,4 @@
-/*resource "azurerm_storage_account" "genericSA" {
+resource "azurerm_storage_account" "genericSA" {
   name                     = var.storageAccountName
   resource_group_name      = azurerm_resource_group.genericRG.name
   location                 = azurerm_resource_group.genericRG.location
@@ -15,4 +15,3 @@ resource "azurerm_storage_share" "genericFileShare" {
 
   quota = var.fsQuota
 }
-*/
