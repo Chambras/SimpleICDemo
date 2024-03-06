@@ -1,4 +1,4 @@
-/*resource "azurerm_public_ip" "devRHPublicIP" {
+resource "azurerm_public_ip" "devRHPublicIP" {
   name                = "${var.suffix}${var.devRHVMName}${var.devRHPublicIPName}"
   location            = azurerm_resource_group.genericRG.location
   resource_group_name = azurerm_resource_group.genericRG.name
@@ -38,7 +38,7 @@ resource "azurerm_linux_virtual_machine" "mainDevVM" {
   ]
 
   admin_ssh_key {
-    username = var.devRHUserName
+    username   = var.devRHUserName
     #public_key = file(var.devRHsshKeyPath)
     public_key = var.devRHPublicKey
   }
@@ -62,4 +62,3 @@ resource "azurerm_linux_virtual_machine" "mainDevVM" {
 
   tags = var.tags
 }
-*/

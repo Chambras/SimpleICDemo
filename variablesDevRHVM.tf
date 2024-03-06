@@ -4,12 +4,12 @@ variable "devRHUserName" {
   description = "Username to be added to the VM."
 }
 
-variable "devRHsshKeyPath" {
+/*variable "devRHsshKeyPath" {
   type        = string
   default     = "~/.ssh/vm_ssh.pub"
   description = "SSH Key path to use when creating the VM."
   sensitive   = true
-}
+}*/
 
 variable "devRHPublicKey" {
   type        = string
