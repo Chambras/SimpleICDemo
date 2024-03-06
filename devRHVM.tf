@@ -38,7 +38,7 @@ resource "azurerm_linux_virtual_machine" "mainDevVM" {
   ]
 
   admin_ssh_key {
-    username   = var.devRHUserName
+    username = var.devRHUserName
     #public_key = file(var.devRHsshKeyPath)
     public_key = var.devRHPublicKey
   }
